@@ -45,6 +45,7 @@ Data validation to ensure integrity.
 Uses Data Transfer Objects (DTOs) for efficient data flow between client and server.
 
 Technologies Used
+
 ASP.NET Core WebAPI
 Entity Framework Core
 ASP.NET Identity & JWT Authentication
@@ -55,6 +56,7 @@ SMTP for email communication
 
 
 Contribution
+
 Feel free to contribute to this project by following these steps:
 Fork the repository.
 Create a new branch for your feature or bug fix.
