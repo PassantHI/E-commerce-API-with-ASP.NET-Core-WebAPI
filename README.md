@@ -7,41 +7,40 @@ Features
 Here’s a glimpse of the key features 🔎:
 
 🛍 Product Management:
-
 Full CRUD operations for products and categories.
 Easily manage store items, allowing addition, modification, and deletion.
-🛒 Cart Functionality:
 
+🛒 Cart Functionality:
 Session-based cart management.
 Seamless browsing, shopping, and cart updates.
-📦 Order Management:
 
+📦 Order Management:
 Efficient order processing system.
 Allows users to place and track orders effortlessly.
+
 💌 Wishlist Implementation:
-
 Users can save their favorite products for future reference.
+
 💬 Reviews & Ratings:
-
 Users can leave feedback on products, helping other customers with informed choices.
+
 🔍 Search & Filter:
-
 Enhanced product search and filtering options for an optimized user experience.
-🔒 Authentication & Authorization:
 
+🔒 Authentication & Authorization:
 Integrated ASP.NET Identity with JWT for secure login.
 Role-based access control to manage different types of users.
-👥 Account Management:
 
+👥 Account Management:
 Secure login, registration, and account management.
 Forgot password and change password functionality included.
 SMTP email confirmation for account verification.
-🏗️ Architecture & Design Patterns:
 
+🏗️ Architecture & Design Patterns:
 Follows the Repository Design Pattern and Unit of Work.
 Clean architecture for maintainable and scalable code.
-✅ Validation & Data Handling:
 
+✅ Validation & Data Handling:
 Data validation to ensure integrity.
 Uses Data Transfer Objects (DTOs) for efficient data flow between client and server.
 
