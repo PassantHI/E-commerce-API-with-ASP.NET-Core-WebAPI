@@ -1,4 +1,3 @@
-E-commerce API with ASP.NET Core WebAPI
 🚀 E-commerce API Project Completed! 🌟
 
 I'm excited to share my latest project, an E-commerce API built with ASP.NET Core WebAPI! This project demonstrates how to manage products, carts, orders, and more, with secure authentication and smooth user interactions.
