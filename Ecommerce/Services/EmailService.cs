@@ -18,7 +18,7 @@ namespace Ecommerce.Services
             var smtpclient = new SmtpClient("smtp.office365.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential("PassantHatemIsmael@outlook.com", "222222222@@@@@@"),
+                Credentials = new NetworkCredential("PassantHatemIsmael@outlook.com", "@######@"),
                 EnableSsl = true
             };
 
