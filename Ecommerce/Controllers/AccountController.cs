@@ -96,7 +96,7 @@ namespace Ecommerce.Controllers
                         }
                     }
 
-                    var MyKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("kshkhfkeo213566HGUQSKK!@#$%^&(_+vfhKHSKS46521212"));
+                    var MyKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("21212"));
 
                     SigningCredentials credential = new SigningCredentials(MyKey, SecurityAlgorithms.HmacSha256);
                     JwtSecurityToken MyToken = new JwtSecurityToken(
