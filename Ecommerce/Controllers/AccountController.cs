@@ -219,7 +219,7 @@ namespace Ecommerce.Controllers
             ApplicationUser userModel = await userManager.FindByIdAsync(userId);
             if (userModel != null)
             {
-                var result = await userManager.ResetPasswordAsync(userModel, token, "khkPJkkk55KH24)@%^*1212");  
+                var result = await userManager.ResetPasswordAsync(userModel, token, "1212");  
                 if (result.Succeeded)
                 {
                     return Ok("password changes");
