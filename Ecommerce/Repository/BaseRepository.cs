@@ -51,17 +51,12 @@ namespace Ecommerce.Repository
             }
             return query.ToList();
         }
-        //public IEnumerable<T> GetAll() 
-        //{
-        //    return _context.Set<T>().ToList();
-
-        //}
+        
 
         public T GetBy(Expression<Func<T, bool>>? expression, string[]? includes)
         {
             IQueryable<T> query = _context.Set<T>();
 
-            // Handle includes
             if (includes != null)
             {
                 foreach (var include in includes)
@@ -79,25 +74,7 @@ namespace Ecommerce.Repository
 
         }
 
-        //public T GetBy(Expression<Func<T, bool>>? expression, string[]? includes=null)
-        //{
-        //    IQueryable<T> query = _context.Set<T>();
-        //    if (includes != null&&expression!=null)
-        //    {
-        //        foreach (var include in includes)
-        //        {
-        //            query = query.Include(include);
-
-        //        }
-
-
-        //    }
-
-        //    return query.SingleOrDefault(expression);
-
-        //}
-        //eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImQxODlkOTgxLTYzOTUtNDIxYS1iODIwLTQyZDllN2E1ZjEyYSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJwYXNzYW50IiwianRpIjoiOTQyNTlhOTEtYmNmNi00NjNhLTkzYzgtMTkyNWU1YjNhNzNmIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTcyNzMwNTMyNiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1ODM1MyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDIwMCJ9.RFwRQxXmAAL7J0S_KuJLihQFii79ZZOa6JojTDQOi6s
-
+       
         public T GetById(int id)
         {
             var exist= _context.Set<T>().Find(id);
